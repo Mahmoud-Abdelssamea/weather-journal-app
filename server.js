@@ -9,6 +9,8 @@ const app = express();
 //use cors backage
 app.use(cors());
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // middleware
 // build a get request
 app.get("/", (req, res) => {
