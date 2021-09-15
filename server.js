@@ -9,6 +9,12 @@ const app = express();
 //use cors backage
 app.use(cors());
 
+// middleware
+// build a get request
+app.get("/", (req, res) => {
+  res.send("hello");
+});
+
 // add a host to start  runnning the server
 app.listen(port, () => {
   console.log(`SERVER IS RUNNING AT PORT ${port}`);
