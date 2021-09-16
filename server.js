@@ -8,7 +8,6 @@ const app = express();
 
 // create an object
 const projectData = {};
-const key = "0d9003ce99540f980a4ba3acc599c020";
 
 //use cors backage
 app.use(cors());
