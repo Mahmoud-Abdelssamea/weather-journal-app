@@ -14,6 +14,7 @@ body {
   color: black;
   justify-content: center;
   align-items: center;
+  text-align: center;
   grid-gap: 1em;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
@@ -39,6 +40,12 @@ body {
 }
 
 .holder {
+  color: #22b2da;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .entry {
@@ -80,15 +87,22 @@ input {
 }
 
 button {
-  width: 400px;
-  height: 100px;
-  background: #3b4a6b;
-  color: #f0d43a;
-  font-size: 26px;
-  font-family: "Oswald", sans-serif;
-  border: none;
-  box-shadow: 2px 4px 5px #444;
+  background-color: rgb(13, 142, 151);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
+button:hover {
+  background-color: white;
+  color: rgb(13, 142, 151);
+}
+
 h1 {
   font-size: 36px;
 }
