@@ -23,7 +23,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: -1;
+  z-index: 1;
   position: relative;
 }
 
@@ -41,7 +41,6 @@ body {
 
 .holder {
   color: #22b2da;
-  font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,9 +51,53 @@ body {
   background: rgba(59, 74, 107, 0.4);
 }
 
-#entryHolder {
+.zip {
+  margin-top: -5rem;
+}
+.zip label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: -10rem;
+}
+.zip input {
+  font-family: "Oswald", sans-serif;
+  height: 2.5rem;
+  width: 20rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
+.feel {
+  margin-top: -5rem;
+}
+.entry {
+  position: absolute;
+  height: 3rem;
+  width: 50rem;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+#entryHolder {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: space-between;
+  color: white;
+}
+#entryHolder span {
+  color: #22b2da;
+}
 #date {
 }
 
@@ -75,22 +118,13 @@ label {
   font-size: 27px;
 }
 
-input {
-  display: block;
-  height: 60px;
-  width: 320px;
-  background: #22b2da;
-  color: #f0d43a;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  border: none;
-}
-
 button {
   background-color: rgb(13, 142, 151);
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   color: white;
   -webkit-border-radius: 6px;
@@ -104,14 +138,19 @@ button:hover {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
 }
 
 textarea {
-  background: #22b2da;
-  color: #f0d43a;
-  font-size: 20px;
+  background: rgba(255, 255, 255, 0.705);
+  color: black;
+  font-size: 1.1rem;
   font-family: "Oswald", sans-serif;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -123,7 +162,7 @@ button:focus {
 /* Style for Placeholder Text*/
 ::placeholder {
   /* Firefox, Chrome, Opera */
-  color: #f0d43a;
+  color: rgba(0, 0, 0, 0.479);
   font-family: "Oswald", sans-serif;
 }
 
