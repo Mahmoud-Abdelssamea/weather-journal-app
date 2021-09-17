@@ -95,11 +95,25 @@ body {
   align-content: space-between;
   color: white;
 }
-#entryHolder span {
-  color: #22b2da;
+
+#entryHolder {
+  color: rgb(13, 142, 151);
 }
-/*  Basic Styling To Override Default For Basic HTML Elements */
-label {
+
+#entryHolder span {
+  color: white;
+}
+
+#hint {
+  display: none;
+
+  color: white;
+  background-color: rgb(167, 112, 12);
+  padding: 0.1rem 4rem;
+  border-radius: 10px;
+}
+/* Basic Styling To Override Default For Basic HTML Elements */
+*/ label {
   display: block;
   font-size: 27px;
 }

@@ -14,7 +14,13 @@
       <div class="holder headline"><h1>Weather Journal App</h1></div>
       <div class="holder zip">
         <label for="zip">Enter Zipcode here</label>
-        <input type="text" id="zip" placeholder="enter zip code here" />
+        <input
+          type="text"
+          id="zip"
+          required
+          placeholder="enter zip code here"
+        />
+        <small id="hint"></small>
       </div>
       <div class="holder feel">
         <label for="feelings">How are you feeling today?</label>
@@ -30,9 +36,9 @@
       <div class="holder entry">
         <div class="title">Most Recent Entry</div>
         <div id="entryHolder">
-          <div id="date"><span>Date: </span>21/5/55</div>
-          <div id="temp"><span>Temp: </span>36</div>
-          <div id="content">its so hot</div>
+          <div>Date: <span id="date">-</span></div>
+          <div>Temp: <span id="temp">-</span></div>
+          <div><span id="content">-</span></div>
         </div>
       </div>
     </div>
