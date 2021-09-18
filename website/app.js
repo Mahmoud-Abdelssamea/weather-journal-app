@@ -81,9 +81,13 @@ const postData = async (url = "", data = {}) => {
   });
   try {
     // convert the data to json
-    const resData = await response.json();
-    return resData;
+    if (response.status >= 400) {
+      const resData = await response.json();
+      // console.log("error");
+      throw resData;
+    }
 
+    return resData;
     // catch the errors
   } catch (error) {
     console.log("error", error);
