@@ -1,10 +1,11 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+This project is showing the temprture and the current date plus what you are feeling today and make it visable on the browser.
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+##instruction
+
+Before start using the website its required to run the server.
+After that user can put zipcode for the area which he want to get its tempreture and add his feelings then click on generate button.
+this website will show temp. for USA ONLY
