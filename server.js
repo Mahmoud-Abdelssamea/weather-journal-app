@@ -7,7 +7,7 @@ const port = 3000;
 const app = express();
 
 // create an object
-const projectData = [];
+let projectData = {};
 
 //use cors backage
 app.use(cors());
@@ -34,14 +34,11 @@ app.get("/allData", (req, res) => {
 app.post("/add", (req, res) => {
   console.log(req.body);
   // add all reqested data in an object.
-  newEntry = {
+  projectData = {
     date: req.body.date,
     temp: req.body.temp,
     content: req.body.content,
   };
-  // push the object in array projectData.
-  projectData.push(newEntry);
-  console.log(projectData);
 });
 
 // add a host to start  runnning the server

@@ -111,9 +111,9 @@ const update = async () => {
       throw response.json();
     } else {
       // update elements with new data.
-      date.innerHTML = projectData[projectData.length - 1].date;
-      temp.innerHTML = projectData[projectData.length - 1].temp;
-      content.innerHTML = projectData[projectData.length - 1].content;
+      date.innerHTML = projectData.date;
+      temp.innerHTML = projectData.temp;
+      content.innerHTML = projectData.content;
     }
   } catch (error) {
     console.log(error);
