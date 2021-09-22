@@ -16,12 +16,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// get the file
-// app.get("/add", (req, res) => {
-//   // console.log(__dirname + "/website/index.html");
-//   // res.sendFile(__dirname + "/website/index.html");
-// });
-
+// middleware to serve static files like css and image
 app.use(express.static(__dirname + "/website"));
 
 // send the home
