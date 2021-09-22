@@ -104,7 +104,7 @@ const update = async () => {
   document.getElementById("zip").value = "";
   document.getElementById("feelings").value = "";
   // fetch data from server "projectData"
-  const response = await fetch("http://localhost:3000/add");
+  const response = await fetch("http://localhost:3000/allData");
   const projectData = await response.json();
   try {
     if (response.status >= 400) {

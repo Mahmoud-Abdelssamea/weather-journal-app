@@ -16,9 +16,22 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// build a get request
-app.get("/add", (req, res) => {
-  //  projectData as endpoint API
+// get the file
+// app.get("/add", (req, res) => {
+//   // console.log(__dirname + "/website/index.html");
+//   // res.sendFile(__dirname + "/website/index.html");
+// });
+
+app.use(express.static(__dirname + "/website"));
+
+// send the home
+app.get("/", (req, res) => {
+  // send html file at path "/add"
+  res.sendFile(__dirname + "/website/index.html");
+});
+
+// send data to the update function in clinet side to update the client side
+app.get("/allData", (req, res) => {
   res.send(projectData);
 });
 
