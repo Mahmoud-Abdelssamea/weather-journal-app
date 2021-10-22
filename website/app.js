@@ -32,7 +32,7 @@ function requestHandler() {
       // console.log(info);
 
       // post data to the local serever
-      postData("http://localhost:3000/add", info);
+      postData(`${port}`, info);
 
       //update the html with the data fitched from the server
       update();
