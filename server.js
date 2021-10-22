@@ -2,7 +2,8 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const port = 3000;
+require("dotenv").config();
+const port = process.env.PORT || 3000;
 //create an instance of express and name it app
 const app = express();
 
